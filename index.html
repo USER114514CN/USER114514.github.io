@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>My Application</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6fb;
+      color: #222;
+    }
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .app-icon {
+      width: 96px;
+      height: 96px;
+      margin: 0 auto 20px;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #f1f5ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .app-icon img {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0 0 12px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 24px;
+      color: #555;
+    }
+    .download-btn {
+      display: inline-block;
+      width: 100%;
+      max-width: 260px;
+      padding: 14px 18px;
+      background: #3b82f6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      font-size: 17px;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    .download-btn:hover {
+      background: #2563eb;
+    }
+    .footer {
+      margin-top: 18px;
+      font-size: 13px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="app-icon">
+        <img src="./resources/app_icon.png" alt="My Application 图标">
+      </div>
+      <h1>千恋万花</h1>
+      <p>这是一个安卓应用程序，功能强大、界面简洁，适合日常使用。你将会扮演成游戏的主人公，与游戏里的角色进行互动。</p>
+      <a class="download-btn" href="./app/application.apk" download>立即下载</a>
+      <div class="footer">适配竖屏移动端，下载后即可安装体验。</div>
+    </div>
+  </div>
+</body>
+</html>
